@@ -1,3 +1,2 @@
 # weigurde.github.io
-bad site
-lol
+funny site source code
