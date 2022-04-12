@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.center-div {
+  z-index: 1;
+  position: relative;
+  left: 11.25%;
+  color: white;
+  margin: 0em 0em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  width: 87.5%;
+  
+}
+.title {
+  z-index: 2;
+  color: white;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+}
+p {
+  font-size: 24px;
+}
+.link {
+  font-size: 24px;
+  color: teal;
+}
+/*  <skidded-code> */
+
+nav ul.sidebar{
+  z-index: 3;
+  list-style-type: none;
+  width: 10%;
+  background-color: #1f1f1f;
+  position: fixed;
+  height: 100%;
+  padding: 0px 0px;
+}
+
+li.sidebar-link a {
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+li a:hover {
+  background-color: #555;
+  color: #a6e90a;
+  font-weight: bold;
+}
