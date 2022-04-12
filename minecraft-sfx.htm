@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="embed :)"/>
+		<meta name="keywords" content="i'm not doing seo here"/>
+		<meta name="author" content="Weigurde"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>weigurde.github.io</title>
+	
+	<link rel="stylesheet" href="assets/style.css">
+	</head>
+	<body>
+		<nav>
+			<ul class="sidebar">
+				<li class="sidebar-link">
+					<a href="index.htm">index
+					</a>
+				</li>
+				<li class="sidebar-link">
+					<a href="files.htm">files
+					</a>
+				</li>
+				<li class="sidebar-link">
+					<a href="contact.htm">contact
+					</a>
+				</li>
+				<l class="sidebar-link">
+					<a href="https://e560000.github.io/">linkhub
+					</a>
+				</li>
+				<li class="sidebar-link">
+					<a href="https://github.com/Weigurde/weigurde.github.io">github
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="center-div">
+			<h1 class="title">minecraft sounds are weird.
+			</h1>
+			<p>
+			now, in minecraft, if you're trying to make a resource pack, it's relatively simple to get a base with most textures. you just need to open up the version's JAR file (by default in windows, <code>%appdata%/.minecraft/versions/</code> )in compression software like WinRAR, and enter the assets folder. <br>however, if you want to have sounds as well, it's a bit more complicated.
+	
+	
+	<br><br>to get sounds, you first need to understand the structure of the <code>assets</code> folder. there are two folders inside <code>assets</code> we need; <code>indexes</code> and <code>objects</code>.
+		
+		inside <code>indexes</code> is a <code>.json</code> file listing every single sound in that version, along with a <strong>hash</strong> of it, and its size in bytes (used during startup to verify files)
+		
+		to find a file, first search the newest version's<code>.json</code> for the sound you want; i'll be assuming we want to play the music <i>Left to Bloom</i>.
+		
+		when searching for a given file, you should always search without capitalization, and replacing any spaces with underscores; instead of <i>Left To Bloom</i>, we're gonna look for <code>left_to_bloom</code>. now, according to the index we're using, the sound <code>minecraft/sounds/music/game/left_to_bloom.ogg</code> has the&nbsp<!---->hash&nbsp<!----><code>aa1d3aace1c481ac32d5827fba287294b6bc99fb</code>.
+		now with the hash, we enter the <code>objects</code> folder. inside <code>objects</code> , there are 256 folders, from <code>00</code> to <code>ff</code>. the first two letters of our hash are the folder we need to enter; in this case they're <code>aa</code>, so&nbsp<!---->we enter the&nbsp<!----><code>aa</code>&nbsp<!---->folder.
+		inside <code>aa</code>, there are many files, each with a different hash as a different file. however, there's one with our hash as its name, and that's the one we're after. rename it to <code>left_to_bloom.ogg</code>, and you've got <i>Left To Bloom</i>!
+	<br><br>now, you might be thinking, <i>"hey, this whole process takes a while, is it automated yet?"</i>
+			</p><!-- me when nbsp! why does this break npp formatting, i have no idea. -->
+		</div>
+	</body>
+</html>

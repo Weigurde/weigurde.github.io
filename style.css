@@ -3,13 +3,19 @@ body {
   margin: 0;
 }
 
-div {
+.center-div {
+  z-index: 1;
+  position: relative;
+  left: 11.25%;
   color: white;
-  width: 50%;
-  margin: auto;
+  margin: 0em 0em;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  width: 87.5%;
+  
 }
-h1 {
+.title {
+  z-index: 2;
   color: white;
   width: 50%;
   margin: auto;
@@ -19,36 +25,31 @@ h1 {
 p {
   font-size: 24px;
 }
-a {
+.link {
   font-size: 24px;
   color: teal;
 }
-/*  i am going insane */
+/*  <skidded-code> */
 
-ul {
+nav ul.sidebar{
+  z-index: 3;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   width: 10%;
   background-color: #1f1f1f;
   position: fixed;
   height: 100%;
-  overflow: auto;
+  padding: 0px 0px;
 }
 
-li a {
+li.sidebar-link a {
   display: block;
   color: #fff;
   padding: 8px 16px;
   text-decoration: none;
+  font-size: 24px;
 }
 
-li a.active {
-  background-color: #04AA6D;
-  color: black;
-}
-
-li a:hover:not(.active) {
+li a:hover {
   background-color: #555;
   color: #a6e90a;
   font-weight: bold;
