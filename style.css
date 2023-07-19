@@ -1,0 +1,89 @@
+@font-face {
+    font-family: comical-sans;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comicneue/v8/4UaErEJDsxBrF37olUeD_xHM8pxULg.woff2) format('woff2');
+}/*google fonts, but injected directly*/
+.bg {
+    position:absolute;
+    left:0;right:0;top:0;bottom:0;
+    background: 
+        radial-gradient(ellipse at top, #3366aa, transparent), 
+        radial-gradient(ellipse at bottom, #66aa33, black);
+}
+h1{
+    background-clip: text;
+    background-image: linear-gradient(127deg, #d00, #ff0);
+    color: transparent;
+    width: fit-content;
+    font: 6em comical-sans;
+    font-weight: bold;
+    font-style: italic;
+    font-display:swap;
+    margin: auto;
+}
+.content{
+    position: absolute;
+    left: 16.6%;
+    right:16.6%;
+    color: aquamarine;
+    font: 1.5em tahoma;
+    text-align: justify;
+    text-justify: distribute;
+}
+a {
+    color: rgb(87, 215, 172);
+}
+.lists{
+    display:flex;
+    justify-content:space-between;
+    background:linear-gradient(to right,#7003,#0073);
+    border-radius: 1em;
+}
+.left-list {
+    width:50%;
+}
+.right-list {
+    width:50%;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    font: 0.66em tahoma;
+    text-align:center;
+    width:66%
+}
+iframe {
+    border-width: 0px;
+    background-color:#0002;
+}
+.snippet-top{
+    position:absolute;
+    width: 15%;
+    height: 400px;
+    background-color:#0003;
+    padding-left: 10px; 
+    padding-right:10px;
+    padding-top: -10px;
+    color: red;
+    font: 1em tahoma;
+    text-align: center;
+}
+.snippet-title {
+    font:2em tahoma;
+    font-weight: 600;
+    text-align:center;
+    height:0.75em;
+}
+#mc-output {
+    margin-top:1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color:#fff;
+    text-align:left;
+}
+.skin {
+    image-rendering: pixelated;
+    width:60%;
+}
